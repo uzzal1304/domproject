@@ -17,4 +17,8 @@ function addTask(){
         day: "2-digit",
         month: "2-digit",
     });
-   
+    const task = {
+        id:Date.now(),
+
+    }
+}
