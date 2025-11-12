@@ -5,3 +5,6 @@ const summary=document.getElementById("summary");
 
 let tasks =[];
 addBtn.addEventListener("click", addTask);
+taskinput.addEventListener("keypress",(e)=>{
+    if(e.key==="Enter") addTask();
+});
