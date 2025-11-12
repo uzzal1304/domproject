@@ -7,7 +7,27 @@
 </head>
 <body class="bg-teal-200 flex justify-center items-center min-h-screen">
   <div class="bg-white shadow-2xl rounded-2xl p-6 w-[600px]">
-    
+    <h2 class="text-3xl font-semibold text-center text-gray-700 mb-2">To-do-list</h2>
+   <p id="summary" class="text-center text-gray-500 text-sm mb-4">0 Total, 0 Completed, 0 Pending</p>
+
+   <div class="flex mb-4">
+    <input type="text" placeholder="Add your task ..." id="taskinput" class="flex-1 border border-gray-300 rounded-l-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-400">
+    <button id="addBtn" class="bg-teal-500 text-white px-4 rounded-r-xl hover:bg-teal-600 transition-all">Add</button>
+   </div>
+  <div class="overflow-x-auto">
+    <table class="w-full border border-gray-300 text-sm">
+     <thead>
+      <tr class="bg-teal-100 text-gray-700">
+        <th class="py-2 border">Num</th>
+        <th class="py-2 border">Task</th>
+        <th class="py-2 border">Date</th>
+        <th class="py-2 border">Status</th>
+        <th class="py-2 border">Action</th>
+      </tr>
+     </thead>
+     <tbody id="taskTable" class="text-center"></tbody>
+    </table>
+  </div>
   </div>
   
 
