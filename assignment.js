@@ -59,3 +59,9 @@ function renderTasks(){
     });
     updateSummary();
 }
+function updateSummary(){
+    const total = tasks.length;
+    const completed = tasks.filter((t)=>t.completed).length;
+    const pending = total - completed;
+    summary.textContent = `${total} Total, ${completed}, ${pending} Pending`;
+}
